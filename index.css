@@ -1,170 +1,301 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Fredoka One, Poppins;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Fredoka One, Poppins;
 }
 
 body {
-    padding: 2rem 4rem;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+	padding: 2rem 4rem;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
 }
 
 nav {
-    display: flex;
-    gap: 2rem;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+	align-items: center;
 }
-
+.menu {
+	display: none;
+}
 nav img:first-child {
-    width: 7rem;
+	width: 7rem;
 }
 
 .nav-items {
-    display: flex;
-    gap: 2rem;
+	display: flex;
+	gap: 2rem;
 }
 
 .nav-item:hover {
-    color: #fe5e35;
-    cursor: pointer;
+	color: #fe5e35;
+	cursor: pointer;
 }
 
 .active-item {
-    color: #fe5e35;
+	color: #fe5e35;
 }
 
 .intro-section {
-    display: flex;
-    padding: 4rem 0;
+	display: flex;
+	padding: 4rem 0;
 }
 
 .left-section h3 {
-    font-size: 2rem;
-    font-family: Poppins;
+	font-size: 2rem;
+	font-family: Poppins;
 }
 
-.left-section>h3>img {
-    width: 2rem;
+.left-section > h3 > img {
+	width: 2rem;
 }
 
 .left-section h1 {
-    font-size: 3rem;
-    padding: 1rem 0;
+	font-size: 3rem;
+	padding: 1rem 0;
 }
 
 .sub-headline {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-family: Poppins;
-    font-size: 1.2rem;
-    padding: 0.5rem 0;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-family: Poppins;
+	font-size: 1.2rem;
+	padding: 0.5rem 0;
 }
 
 .sub-headline img {
-    padding: 0.3rem;
-    background-color: #fe5e35;
-    border-radius: 50%;
+	padding: 0.3rem;
+	background-color: #fe5e35;
+	border-radius: 50%;
 }
 
 .text {
-    font-size: 0.8rem;
-    color: #999999;
-    margin: 2rem 0;
+	font-size: 0.8rem;
+	color: #999999;
+	margin: 2rem 0;
 }
 
 .action-btns {
-    display: flex;
-    gap: 2rem;
+	display: flex;
+	gap: 2rem;
 }
 
 .action-btn {
-    color: #fff;
-    width: max-content;
-    font-size: 1rem;
-    font-family: Poppins;
-    background-color: #fe5e35;
-    padding: 0.3rem 2rem;
-    border: 2px solid #fe5e35;
-    border-radius: 100vh;
+	color: #fff;
+	width: max-content;
+	font-size: 1rem;
+	font-family: Poppins;
+	background-color: #fe5e35;
+	padding: 0.3rem 2rem;
+	border: 2px solid #fe5e35;
+	border-radius: 100vh;
 }
 
 .action-btn:hover {
-    background-color: #ffffff;
-    color: #fe5e35;
-    cursor: pointer;
+	background-color: #ffffff;
+	color: #fe5e35;
+	cursor: pointer;
 }
 
 .left-section,
 .right-section {
-    width: 50%;
-    position: relative;
+	width: 50%;
+	position: relative;
 }
 
 .headphone-div {
-    position: relative;
-    width: 100%;
-    height: 400px;
+	position: relative;
+	width: 100%;
+	height: 400px;
 }
 
 .headphone-div img:last-child {
-    position: absolute;
-    top: -60px;
-    left: 200px;
-    height: 400px;
+	position: absolute;
+	top: -60px;
+	left: 200px;
+	height: 400px;
 }
 
 .discount {
-    position: absolute;
-    top: 190px;
-    left: 200px;
-    z-index: 2;
-    width: 120px;
+	position: absolute;
+	top: 190px;
+	left: 200px;
+	z-index: 2;
+	width: 120px;
 }
 
 .discount-content {
-    position: absolute;
-    top: 220px;
-    left: 230px;
-    z-index: 4;
-    color: #fff;
+	position: absolute;
+	top: 220px;
+	left: 230px;
+	z-index: 4;
+	color: #fff;
 }
 
 .dots {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    position: absolute;
-    top: 340px;
-    left: 325px;
-    z-index: 2;
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	position: absolute;
+	top: 340px;
+	left: 325px;
+	z-index: 2;
 }
 
 .dot {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
 }
 
 .yellow-dot {
-    background-color: #ffff00;
+	background-color: #ffff00;
 }
 
 .tomato-dot {
-    background-color: #ff6347;
+	background-color: #ff6347;
 }
 
 .black-dot {
-    background-color: #000000;
+	background-color: #000000;
 }
 
-.dots+.action-btn {
-    position: absolute;
-    top: 400px;
-    left: 325px;
-    z-index: 2;
+.dots + .action-btn {
+	position: absolute;
+	top: 400px;
+	left: 325px;
+	z-index: 2;
+}
+@media all and (max-width: 1150px) {
+	.headphone-div img:last-child,
+	.discount {
+		left: 150px;
+	}
+	.discount-content {
+		left: 180px;
+	}
+	.dots,
+	.dots + .action-btn {
+		left: 275px;
+	}
+}
+@media all and (max-width: 1050px) {
+	.headphone-div img:last-child,
+	.discount {
+		left: 100px;
+	}
+	.discount-content {
+		left: 130px;
+	}
+	.dots,
+	.dots + .action-btn {
+		left: 225px;
+	}
+}
+@media all and (max-width: 940px) {
+	body {
+		padding: 2rem;
+	}
+	.headphone-div img:last-child,
+	.discount {
+		left: 0px;
+	}
+	.headphone-div img:last-child {
+		top: 0;
+	}
+	.discount {
+		top: 250px;
+	}
+	.discount-content {
+		top: 280px;
+		left: 30px;
+	}
+	.dots,
+	.dots + .action-btn {
+		left: 125px;
+	}
+	.dots {
+		top: 400px;
+	}
+	.dots + .action-btn {
+		top: 460px;
+	}
+}
+@media all and (max-width: 825px) {
+	.action-btns {
+		gap: 1rem;
+	}
+	.headphone-div img:last-child,
+	.discount {
+		left: 0px;
+	}
+	.discount-content {
+		left: 30px;
+	}
+	.dots,
+	.dots + .action-btn {
+		left: 125px;
+	}
+}
+@media all and (max-width: 790px) {
+	body {
+		padding-bottom: 4rem;
+	}
+	.intro-section {
+		flex-direction: column;
+		gap: 2rem;
+		align-items: center;
+	}
+	.left-section {
+		width: 100%;
+	}
+}
+@media all and (max-width: 750px) {
+	.nav-items,
+	nav > img:last-of-type {
+		display: none;
+	}
+	.menu {
+		width: 2rem;
+		height: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.bar {
+		width: 100%;
+		height: 3px;
+		background-color: #000;
+	}
+}
+@media all and (max-width: 570px) {
+	body {
+		padding: 1rem;
+		padding-bottom: 4rem;
+	}
+	.intro-section {
+		align-items: flex-start;
+	}
+}
+@media all and (max-width: 405px) {
+	.action-btn {
+		padding: 0.3rem 1rem;
+	}
+	.headphone-div img:last-child {
+		width: 90vw;
+		height: auto;
+	}
+}
+@media all and (max-width: 340px) {
+	.action-btns {
+		gap: 2px;
+	}
+	.dots,
+	.dots + .action-btn {
+		left: auto;
+	}
 }
